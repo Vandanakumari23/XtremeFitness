@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE tiles-definitions PUBLIC
+      "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" 
+      "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions> 
+
+<definition name="BaseDef"  template="layout.jsp">    
+        <put-attribute name="HEADER" value="/header.jsp" />  
+        <put-attribute name="BODY" value="" />  
+        <put-attribute name="FOOTER" value="/footer.jsp" />  
+    </definition>  
+    
+    <definition name="HomeDef" extends="BaseDef">   
+       <put-attribute name="BODY" value="/welcome.jsp" />   
+    </definition>
+    
+    
+    <definition name="AboutDef" extends="BaseDef">   
+        <put-attribute name="BODY" value="/about_us.jsp" />            
+    </definition> 
+    
+    <definition name="ContactDef" extends="BaseDef">  
+           <put-attribute name="BODY" value="/contact.jsp" />   
+    </definition> 
+    
+    <definition name="SheduleDef" extends="BaseDef">  
+           <put-attribute name="BODY" value="/shedule.jsp" />   
+    </definition> 
+    
+    <definition name="ShopingDef" extends="BaseDef">  
+           <put-attribute name="BODY" value="/store.jsp" />   
+    </definition> 
+     
+    <definition name="TrainersDef" extends="BaseDef">  
+           <put-attribute name="BODY" value="/trainer.jsp" />   
+    </definition> 
+</tiles-definitions>  
